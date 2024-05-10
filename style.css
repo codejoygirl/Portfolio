@@ -696,6 +696,19 @@ p {
 }
 /* End Media Query For Tablet */
 
+/* Media Query For Mobile */
+@media screen and (max-width: 768px) {
+    .social-icon {
+        flex-direction: row; /* Ensure icons stay in a single row */
+        justify-content: center; /* Center icons horizontally on smaller screens */
+        margin: 10px auto; /* Adjust margin for smaller screens */
+    }
+
+    .social-item {
+        margin: 0 5px; /* Adjust spacing for smaller screens */
+    }
+}
+
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
 	/* header */
@@ -727,29 +740,7 @@ p {
 }
 
 
-/* Styles for all screens */
-.social-icon {
-	display: flex;
-	justify-content: space-around; /* Space icons evenly */
-	margin: 10px auto; /* Add some margin for better visual balance */
-  }
-  
-  .social-item {
-	margin: 0 10px; /* Add spacing between icons */
-  }
-  
-  /* Styles for screens smaller than 768px (typical mobile breakpoint) */
-  @media screen and (max-width: 768px) {
-	.social-icon {
-	  flex-direction: row; /* Ensure icons stay in a single row */
-	  justify-content: center; /* Center icons horizontally on smaller screens */
-	  margin: 10px auto; /* Adjust margin for smaller screens */
-	}
-  
-	.social-item {
-	  margin: 0 5px; /* Adjust spacing for smaller screens */
-	}
-  }
+
   
   
 /* End  Media Query For Desktop */
