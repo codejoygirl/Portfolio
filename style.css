@@ -730,23 +730,13 @@ p {
 /* Styles for all screens */
 .social-icon {
 	display: flex;
-	justify-content: flex-end; /* Align icons to the right */
+	justify-content: space-around; /* Evenly distribute icons on all screens */
   }
   
   .social-item {
-	margin: 0 5px; /* Add some spacing between icons */
+	margin: 0 10px; /* Add spacing between icons */
   }
   
-  /* Styles for screens smaller than 768px (typical mobile breakpoint) */
-  @media screen and (max-width: 768px) {
-	.social-icon {
-	  justify-content: space-around; /* Evenly distribute icons on mobile */
-	}
-  
-	.social-item {
-	  margin: 5px; /* Adjust spacing for smaller screens */
-	}
-  }
   
   
 /* End  Media Query For Desktop */
